@@ -35,3 +35,14 @@ class Stack:
         data = self.top.data
         self.top = self.top.next_node
         return data
+
+    def __str__(self):
+        info = ""
+        if self.top != None:
+            foll = self.top
+            info = foll.data
+
+            while foll.next_node != None:
+                info += f"\n{foll.next_node.data}"
+                foll = foll.next_node
+        return f"{info}"
