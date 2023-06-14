@@ -41,8 +41,8 @@ class Queue:
         :return: данные удаленного элемента
         """
         if self.head == None:
-            print("Очередь пустая.")
-            return
+            # print("Очередь пустая.")
+            return None
         else:
             rmv_data = self.head.data
             self.head = self.head.next_node
